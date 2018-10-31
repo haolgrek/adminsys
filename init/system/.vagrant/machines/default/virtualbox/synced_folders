@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"/Users/rluder/42/adminsys/init/system","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}},"virtualbox":{"/git":{"guestpath":"/git","hostpath":"/Users/rluder/42/adminsys/init/system","disabled":false,"__vagrantfile":true}}}
