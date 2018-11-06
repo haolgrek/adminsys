@@ -1,0 +1,6 @@
+DATEC="$(date +%b%e)"
+DATEF="$(date -r /etc/crontab +%b%e)"
+if [ "$DATEC" = "$DATEF" ]
+then mail -s "Crontab changed" root < /etc/crontab
+fi
+exit 0

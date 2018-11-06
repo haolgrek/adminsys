@@ -1,0 +1,1 @@
+(crontab -l ; echo '0 0 * * * /home/vagrant/script') | crontab -
