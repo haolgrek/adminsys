@@ -1,0 +1,1 @@
+docker service logs --follow engineering-bay 2>&1 | grep engineering-bay.1
