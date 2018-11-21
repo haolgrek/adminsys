@@ -1,6 +1,6 @@
 FROM debian
 
-ENV version=3.5.0
+ENV version=3.4.0
 
 ADD http://dl.4players.de/ts/releases/${version}/teamspeak3-server_linux_amd64-${version}.tar.bz2 /tmp
 
@@ -9,9 +9,9 @@ RUN apt-get -y update && \
   apt-get -y install ca-certificates
 
 RUN mkdir /ts3 && \
-tar xjf /tmp/teamspeak3-server_linux_amd64-$version.tar.bz2 -C /ts3 && \
+tar xjf /tmp/teamspeak3-server_linux_amd64-${version}.tar.bz2 -C /ts3 && \
 mv /ts3/teamspeak3-server_* /ts3/teamspeak && \
-rm /tmp/teamspeak3-server_linux_amd64-$version.tar.bz2
+rm /tmp/teamspeak3-server_linux_amd64-${version}.tar.bz2
 
 EXPOSE 9987/udp 10011 30033
 
